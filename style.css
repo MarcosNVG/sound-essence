@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    font-family: 'Inter', Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+    /*cabeçalho*/
+
+header {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+        /*logo*/
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+        /*navegação*/
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a {
+    margin: 0 30px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+li a:hover {
+    border-bottom: 1px solid black;
+}
+
+        /*cart, fav e botão de entrar*/
+
+.d-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.d-login .entrar {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2px 10px;
+}
+
+.d-login .d-span-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.d-login .d-span-icon span {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+        /*botões de abrir e fechar menu*/
+
+.d-button-menu {
+    display: none;
+}
+
+#open-menu {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close-menu {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+}
+
+    /*principal*/
+
+main {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+        /*conteudo*/
+
+.d-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.d-text {
+    width: 500px;
+    height: auto;
+    line-height: 1.3rem;
+}
+
+.d-button button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin: 30px 10px 0 0; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+
+.d-button button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+        /*slider*/
+
+.container-slide {
+    width: 840px;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    width: 500%;
+    height: 100%;
+}
+
+.d-imagens {
+    width: 20%;
+    transition: 0.6s;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.d-label {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+label:hover {
+    background-color: #ccc;
+}
+
+
+#in-radio1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#in-radio2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#in-radio3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+
+    /*footer*/
+
+footer {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+footer a {
+    color: black;
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+
+    /*responsividade*/
+
+@media only screen and (max-width: 1370px){
+    main {
+        padding-left: 20px;
+        height: calc(100vh - 10vh - 5px);
+    }
+
+    .d-title {
+        font-size: 1.4rem;
+    }
+
+    .d-text {
+        width: calc(100vw - 840px);
+        font-size: 1rem;
+    }
+
+    footer {
+        padding-bottom: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px){
+    li a {
+        margin: 0 20px;
+    }
+
+    .container-slide {
+        width: 640px;
+    }
+
+    .d-text {
+        width: calc(100vw - 640px);
+        font-size: 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 944px){
+
+    /*menu*/
+
+    #nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        z-index: 10;
+        opacity: 1;
+        display: none;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 40px;
+        font-size: 1.3rem;
+    }
+
+    li a {
+        border-bottom: 1px solid black;
+    }
+
+    .entrar {
+        position: fixed;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 10;
+        display: none;
+    }
+
+    .d-span-icon {
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        gap: 5px;
+    }
+
+    .d-span-icon span ion-icon{
+        font-size: 2rem;
+    }
+
+    #nav-footer {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 10;
+        bottom: 28%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    #nav-footer a {
+
+        font-size: 1.4rem;
+        margin: 0 10px;
+    }
+
+    /*botões de abrir e fechar menu*/
+
+     .d-button-menu {
+        display: block;
+        position: fixed;
+        right: 10px;
+     }
+
+     .d-button-menu #open-menu {
+        display: block;
+        cursor: pointer;
+     }
+
+     #close-menu {
+        display: block;
+        z-index: 20;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+     }
+
+    /*main*/
+
+    main {
+        padding: 0;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .container-slide {
+        order: 0;
+        width: 100%;
+    }
+
+    .d-conteudo {
+        order: 1;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .d-title {
+        font-size: 1.4rem;
+    }
+
+    .d-text {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .d-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }    
+}
+
+

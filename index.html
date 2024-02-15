@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundEssence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cabeçalho -->
+
+    <header>
+        <div class="d-logo">
+            <h2 class="logo">Sound <br>essence</h2>
+        </div>
+
+        <div class="d-button-menu">
+            <button id="open-menu" onclick="openMenu()">&#9776;</button>
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <button id="close-menu" onclick="closeMenu()">Fechar</button>
+        </nav>
+
+        <div class="d-login">
+            <a href="#" class="entrar">Entrar</a>
+            <div class="d-span-icon">
+                <span><ion-icon name="heart-outline"></ion-icon></span>
+                <span><ion-icon name="cart"></ion-icon></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- área-principal -->
+
+    <main>
+        <div class="d-conteudo">
+            <div class="d-title">
+                <h1>Headphone </br>wireless</h1>
+            </div>
+
+            <div class="d-text">
+                <p>Deixe-se envolver por uma incrível qualidade sonora  enquanto você mergulha em sua playlist favorita.</p>
+            </div>
+
+            <div class="d-button">
+                <button>Compre agora</button>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+
+                <!--Slider-->
+
+        <div class="container-slide">
+            <div class="slide">
+                <input type="radio" name="radio" id="in-radio1" checked>
+                <input type="radio" name="radio" id="in-radio2">
+                <input type="radio" name="radio" id="in-radio3">
+
+                <div class="d-imagens s1">
+                    <img src="./Imagens/fone-1-mod.jpg" alt="fone de ouvido sem fio branco">
+                </div>
+                <div class="d-imagens s2">
+                    <img src="./Imagens/fone-2-mod.jpg" alt="fone de ouvido sem fio branco">
+                </div>
+                <div class="d-imagens s3">
+                    <img src="./Imagens/fone-3-mod.jpg" alt="fone de ouvido sem fio branco">
+                </div>
+            </div>
+            <div class="d-label">
+                <label for="in-radio1" class="label-1"></label>
+                <label for="in-radio2" class="label-2"></label>
+                <label for="in-radio3" class="label-3"></label>
+            </div>
+        </div>
+    </main>
+
+    <!--Rodapé-->
+
+    <footer>
+        <nav id="nav-footer">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </nav>
+    </footer>
+
+    <script>
+        var navigation = document.querySelector('#nav-menu');
+        var entrar = document.querySelector('.entrar');
+        var navFooter = document.querySelector('#nav-footer');
+
+        function openMenu(){
+            navigation.style.display = 'flex';
+            entrar.style.display = 'flex'
+            navFooter.style.display = 'flex'
+        }
+
+        function closeMenu(){
+            navigation.style.display = 'none'
+            entrar.style.display = 'none'
+            navFooter.style.display = 'none'
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
