@@ -360,7 +360,7 @@ footer a {
         display: block;
         z-index: 20;
         position: fixed;
-        bottom: 2vh;
+        bottom: 50vh;
         right: 2vw;
      }
 
