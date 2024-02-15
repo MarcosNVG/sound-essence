@@ -299,7 +299,7 @@ footer a {
     ul {
         flex-direction: column;
         gap: 40px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     li a {
@@ -360,7 +360,7 @@ footer a {
         display: block;
         z-index: 20;
         position: fixed;
-        bottom: 50vh;
+        bottom: 3vh;
         right: 2vw;
      }
 
