@@ -360,7 +360,7 @@ footer a {
         display: block;
         z-index: 20;
         position: fixed;
-        bottom: 3vh;
+        bottom: 4vh;
         right: 2vw;
      }
 
@@ -385,7 +385,7 @@ footer a {
     }
 
     .d-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .d-text {
@@ -396,8 +396,16 @@ footer a {
     .d-button {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
-    }    
+        margin-top: 20px;
+    }
+    
+    .d-button button {
+        height: 50px;
+    }
+
+    .d-button button:hover {
+        transform: none;
+    }
 }
 
 
