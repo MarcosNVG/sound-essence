@@ -37,6 +37,7 @@ h2 {
 
         /*navegação*/
 
+
 ul {
     list-style-type: none;
     display: flex;
@@ -70,7 +71,12 @@ li a:hover {
     border: 1px solid black;
     border-radius: 15px;
     padding: 2px 10px;
+    transition: 0.2s ease-in-out;
 }
+
+.entrar:hover {
+    transform: scale(1.1);
+} 
 
 .d-login .d-span-icon {
     display: flex;
@@ -314,6 +320,11 @@ footer a {
         z-index: 10;
         display: none;
     }
+
+    .entrar:hover {
+        transform: scale(1.0);
+        transform: translate(-50%);
+    } 
 
     .d-span-icon {
         position: fixed;
