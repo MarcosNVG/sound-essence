@@ -17,11 +17,11 @@ body {
 
 header {
     width: 100%;
-    min-height: 5vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px 10px 0 10px;
     font-size: 1.1rem;
 }
 
@@ -381,7 +381,7 @@ footer a {
         order: 1;
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 0px 20px;
     }
 
     .d-title {
@@ -399,10 +399,6 @@ footer a {
         gap: 10px;
     }
     
-    /*.d-button button {
-
-        margin-top: 30px;
-    }*/
 
     .d-button button:hover {
         transform: none;
