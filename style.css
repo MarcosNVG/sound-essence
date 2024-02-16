@@ -126,7 +126,7 @@ main {
 
         /*conteudo*/
 
-.d-title {
+.d-title{
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
@@ -235,7 +235,7 @@ footer {
 
 }
 
-footer a {
+footer a ion-icon{
     color: black;
     font-size: 1.5rem;
     margin: 0 5px;
@@ -348,7 +348,7 @@ footer a {
         display: none;
     }
 
-    #nav-footer a {
+    #nav-footer a ion-icon {
 
         font-size: 1.4rem;
         margin: 0 10px;
@@ -397,7 +397,7 @@ footer a {
 
     .d-title {
         font-size: 1.3rem;
-        background-color: red;
+       /* background-color: red;*/
     }
 
     .d-text {
@@ -410,6 +410,10 @@ footer a {
         justify-content: center;
         gap: 10px;
     }
+
+    .d-button button {
+        margin-right: 0;
+    }
     
 
     .d-button button:hover {
@@ -418,8 +422,27 @@ footer a {
 }
 
 
-@media only screen and (max-width: 320px) {
+
+@media only screen and (max-height: 640px){
+
+
     .d-title {
-        background-color: pink;
+        font-size: 1rem;
+        margin: -30px 0px 5px 0px;
     }
+
+
+
+    .d-button button {
+        margin-top: 15px;
+
+    }
+
+    #nav-footer a ion-icon {
+        font-size: 1rem;
+    }
+
+    /*.d-text {
+        background-color: blue;
+    }*/
 }
