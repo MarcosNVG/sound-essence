@@ -425,12 +425,13 @@ footer a {
 
 @media only screen and (max-height: 700px){
     main {
-        max-height: calc(100vh - 10vh);
+        max-height: calc(100vh -10vh);
+        justify-content: start;
     }
 
     .d-title {
         font-size: 1rem;
-        margin: -30px 0px 5px 0px;
+        margin: 0px 0px 5px 0px;
     }
 
 
