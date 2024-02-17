@@ -399,7 +399,6 @@ footer a {
     .d-title {
         font-size: 1.3rem;
         margin: 15% 0px 5px 0px;
-       /* background-color: red;*/
     }
 
     .d-text {
@@ -458,9 +457,4 @@ footer a {
         margin-top: 10%;
 
     }
-
-
-    /*.d-text {
-        background-color: blue;
-    }*/
 }
