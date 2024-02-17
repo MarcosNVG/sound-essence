@@ -424,6 +424,22 @@ footer a {
 
 
 @media only screen and (max-height: 700px){
+
+    /*menu*/
+
+    #nav-menu ul {
+        font-size: 1rem;
+    }
+
+    .entrar {
+        top: 20%;
+    }
+    #nav-footer {
+        bottom: 20%;
+    }
+
+    /*principal*/
+
     main {
         max-height: calc(100vh -10vh);
         justify-content: start;
