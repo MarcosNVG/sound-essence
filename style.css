@@ -424,7 +424,9 @@ footer a {
 
 
 @media only screen and (max-height: 700px){
-
+    main {
+        max-height: calc(100vh - 10vh);
+    }
 
     .d-title {
         font-size: 1rem;
